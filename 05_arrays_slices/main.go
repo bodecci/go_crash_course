@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// // Arrays
+	// // Arrays and slices
 	// var fruitArr [2]string
 
 	// // Assign values
