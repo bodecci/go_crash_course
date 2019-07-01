@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main() { // maps is key value pair
 	// Define map
 	emails := make(map[string]string) // defines a map
 
