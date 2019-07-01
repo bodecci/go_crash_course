@@ -2,7 +2,9 @@ package main
 
 import "fmt"
 
-func main() {
+func main() { // pointers. pointing variables to the location of another variable
+	// using &
+
 	a := 5
 	b := &a // assigning b to the pointer of a
 
