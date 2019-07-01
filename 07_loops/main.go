@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main() { // loops
 	// Long method
 	i := 1
 	for i <= 10 {
