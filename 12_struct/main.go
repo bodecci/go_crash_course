@@ -20,6 +20,21 @@ func (p Person) greet() string {
 		strconv.Itoa(p.age)
 }
 
+// hasBirthday method (pointer receiver)
+func (p *Person) hasBirthday() {
+	p.age++
+}
+
+// getMarried (pointer receiver)
+func (p *Person) getMarried(spouseLastName string) {
+	if p.gender == "M" {
+		return
+	} else {
+		p.lastName = spouseLastName
+	}
+
+}
+
 func main() {
 	// init person using struct
 	person1 := Person{
@@ -30,11 +45,12 @@ func main() {
 		age:       40}
 
 	// Alternative
-	// person1 := Person{"Bode", "Fals", "Minneapolis", "M", 40}
-	// fmt.Println(person1)
+	person2 := Person{"Sheri", "Taiwo", "Minneapolis", "F", 30}
+	fmt.Println(person2)
 	// fmt.Println(person1.firstName)
 	// person1.age++
 	// fmt.Println(person1)
-
-	fmt.Println(person1.greet())
+	person1.hasBirthday()
+	person2.getMarried("Fals")
+	fmt.Println(person2.greet())
 }
