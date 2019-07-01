@@ -10,7 +10,7 @@ func main() {
 		fmt.Printf("%d - ID: %d\n", i, id)
 	}
 
-	// Not using index
+	// Not using index to loop thru
 	for _, id := range ids {
 		fmt.Printf("ID: %d\n", id)
 	}
