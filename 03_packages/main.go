@@ -1,4 +1,4 @@
-package main
+package main // importing the reverse func to be used here.
 
 import (
 	"fmt"
