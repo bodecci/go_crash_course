@@ -1,4 +1,4 @@
-package main
+package main // getting the server running.
 
 import (
 	"fmt"
